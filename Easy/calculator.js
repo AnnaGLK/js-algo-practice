@@ -20,7 +20,7 @@ function calculator( a, opr, b ) {
     case '*':
       return a * b;
     case '/':
-      return b !== 0 ? a / b : "Cannot divide by zero";
+      return b !== 0 ? a / b : "Can't divide by 0!";
     default:
       return "Invalid operator";
   }

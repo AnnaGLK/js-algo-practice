@@ -21,9 +21,9 @@ function arrayOfMultiples(num, length) {
 }
 
 
-arrayOfMultiples(7, 5)
-arrayOfMultiples(12, 10)
-arrayOfMultiples(17, 6)
+// arrayOfMultiples(7, 5)
+// arrayOfMultiples(12, 10)
+// arrayOfMultiples(17, 6)
 
 
 exports.solution = arrayOfMultiples;
