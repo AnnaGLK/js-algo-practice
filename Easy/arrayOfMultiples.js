@@ -17,6 +17,10 @@ function arrayOfMultiples(num, length) {
     result.push(num * i);
   }
   console.log (result);
-  // return result;
+  return result;
 }
-// exports.solution = arrayOfMultiples;
+
+
+arrayOfMultiples(7, 5)
+arrayOfMultiples(12, 10)
+arrayOfMultiples(17, 6)
