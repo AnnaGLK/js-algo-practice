@@ -15,15 +15,12 @@ Notes
 Add elements in the new array in the same way they occur in the input array.
 */
 
-function leader( arr) {
- let start = 0;
+function leader(arr) {
+  let start = 0;
   while (start < arr.length) {
-    // Check if the current subarray is descending
+    let descending = true;
+    
     const subArr = arr.slice(start);
-    const isDesc = subArr.every((val, i, a) => i === 0 || a[i - 1] >= val);
-    if (isDesc) {
-      return subArr;
-    }
     // Find the breaking point
     for (let i = 0; i < subArr.length - 1; i++) {
       if (subArr[i] < subArr[i + 1]) {
@@ -31,6 +28,9 @@ function leader( arr) {
         break;
       }
     }
+  }
+  if (descending) {
+    return arr.slice(start); // return descending tail
   }
   // fallback
   return arr.slice(-1);
