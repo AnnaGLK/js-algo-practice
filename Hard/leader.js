@@ -17,9 +17,9 @@ Add elements in the new array in the same way they occur in the input array.
 
 function leader(arr) {
   let start = 0;
+  let descending = true;
   while (start < arr.length) {
-    let descending = true;
-    
+    descending = true;
     const subArr = arr.slice(start);
     // Find the breaking point
     for (let i = 0; i < subArr.length - 1; i++) {
